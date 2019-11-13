@@ -58,6 +58,8 @@ Trying to comment it after the fact was hard tho; if you get math, you should ha
 ### Hello_LCD
 #### Aug 28
 
+#### Assignment_Details
+This assignment was all about getting an LCD hooked up and printing things to the screen
 ### LCD_Backpack
 #### Sep 4
 

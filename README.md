@@ -36,11 +36,12 @@ What I SHOULD explain is the spicy alterations of this assignment
 Since I'm just so good, I did all of the above, including...
 >If you feel like going for the full spice (!), have the brightness fade in and out sinusoidally, rather than linearly.
 
-I'll explain each one independently.
+*Note: triwave corresponds to the first one, signwave corresponds to the above*
 
-*Note: the reason there's more than one .ino file is because they all answer each level of spice independenlty.*
+### Commented Code Links
+[Triangle Wave](led_fade/led_fade_triwave)
 
-
+[Sinusoidal Wave](led_fade/led_fade_signwave)
 
 #### Wiring
 
@@ -50,6 +51,8 @@ Don't forget a 220 resistor, and that the short end is ground
 #### Problems
 
 None of great significance, besides the ~ port thing
+
+Trying to comment it after the fact was hard tho; if you get math, you should have a easy time. Good luck otherwise ;)
 
 ---
 ### Hello_LCD

@@ -3,28 +3,53 @@
 Reference point for Sublime Errors, Analog Control, LCD Communication, Interrupt Commands, and Operating a Photointerruptor
 Also the temporary home for GitHub help
 
-## Table of Contents
+## Table_of_Contents 
+*([ToC](#table_of_contents) for short)*
 
-[LED Blink Revisited](#led_blink_revisited)
+### [LED_Blink_Revisited](#led_blink_revisited)
+- [Assignment](#assignment)
+- [Code](#code)
+- [Wiring](#wiring)
+- [Problems](#problems)
+### [Hello_LCD](#hello_lcd)
+- [Assignment](#assignment-1)
+- [Code](#code-1)
+- [Wiring](#wiring-1)
+- [Problems](#problems-1)
+### [LCD_Backpack](#lcd_backpack)
+- [Assignment](#assignment-2)
+- [Code](#code-2)
+- [Wiring](#wiring-2)
+- [Problems](#problems-2)
+### [Photointerrupters](#photointerrupters)
+- [Assignment](#assignment-3)
+- [Code](#code-3)
+- [Wiring](#wiring-3)
+- [Problems](#problems-3)
+### [Potentiometers](#potentiometers)
+- [Assignment](#assignment-4)
+- [Code](#code-4)
+- [Wiring](#wiring-4)
+- [Problems](#problems-4)
+### [Motor_Control](#motor_control)
+- [Assignment](#assignment-5)
+- [Code](#code-5)
+- [Wiring](#wiring-5)
+- [Problems](#problems-5)
 
-[Hello_LCD](#hello_lcd)
-
-[LCD_Backpack](#lcd_backpack)
-
-[Photointerrupters](#photointerrupters)
-
-[Potentiometers](#potentiometers)
-
-[Motor_Control](#motor_control)
 
 ### LED_Blink_Revisited
 ##### Aug 23
-
-[Files Referenced](led_fade)
+Back to [ToC](#table_of_contents)
+#### Assignment
 
 This assignment is deceptively easy -- just make an LED turn on and off. The problem comes with using a new text editor -- Sublime. It's toolchain is very fickle, and will just not work sometimes. Either way I got it done in a timely manner.
 
-#### Code Explanation
+#### Code
+*Commented Code link [Here:](led_fade)* \
+[Triangle Wave](led_fade/led_fade_triwave)
+
+[Sinusoidal Wave](led_fade/led_fade_signwave)
 
 Now, I don't feel the need to explain how to blink an led.
 
@@ -37,11 +62,6 @@ Since I'm just so good, I did all of the above, including...
 >If you feel like going for the full spice (!), have the brightness fade in and out sinusoidally, rather than linearly.
 
 *Note: triwave corresponds to the first one, signwave corresponds to the above*
-
-### Commented Code Links
-[Triangle Wave](led_fade/led_fade_triwave)
-
-[Sinusoidal Wave](led_fade/led_fade_signwave)
 
 #### Wiring
 
@@ -56,19 +76,57 @@ Trying to comment it after the fact was hard tho; if you get math, you should ha
 
 ---
 ### Hello_LCD
-#### Aug 28
+##### Aug 28
+Back to [ToC](#table_of_contents)
+#### Assignment
+This assignment was all about getting an LCD hooked up and printing things to the screen. Thankfully, soldering pins is no longer required, since it's all done for us already
+>  Here is the assignment.  On line 1 of the LCD, print "Hello World."  On line 2 of the LCD, print the number of seconds that have transpired since the program began. \
 
-#### Assignment_Details
-This assignment was all about getting an LCD hooked up and printing things to the screen
+Since we have a nice teacher, he told us:
+
+> [We're] going to need the following lines somewhere: \
+```arduino
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(7, 8, 9, 10, 11, 12); // Those are the pins for RS, EN, DB4, DB5, DB6, DB7, respectively
+lcd.begin(16, 2);
+lcd.setCursor(0,0);
+lcd.print("stuff");
+```
+
+
+#### Code
+#### Wiring
+#### Problems
+
 ### LCD_Backpack
 #### Sep 4
+Back to [ToC](#table_of_contents)
+#### Assignment
+#### Code
+#### Wiring
+#### Problems
 
 ### Photointerrupters
 #### Sep 13
+Back to [ToC](#table_of_contents)
+#### Assignment
+#### Code
+#### Wiring
+#### Problems
 
 ### Potentiometers
 #### Sep 18
+Back to [ToC](#table_of_contents)
+#### Assignment
+#### Code
+#### Wiring
+#### Problems
 
 ### Motor_Control
 #### Sep 25
-
+Back to [ToC](#table_of_contents)
+Coming Soon!!
+#### Assignment
+#### Code
+#### Wiring
+#### Problems

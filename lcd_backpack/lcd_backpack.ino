@@ -5,23 +5,24 @@
 
 #define BUTTON_PIN 2
 #define SWITCH_PIN 4
-int difference = 1;
+int difference; //holds whether to add 1 or subtract 1
 bool pastButton; //last known state of button
-bool pastSwitch;
-int n;
-bool bPwr;
-bool sPwr;
-LiquidCrystal_I2C lcd(0x3F,2,1,0,4,5,6,7);
+int n; //number for the counter
+bool bPwr; //The read power coming from the button
+bool sPwr; //The read power coming from the switch
+// either is 0(LOW) or 1(HIGH)
+LiquidCrystal_I2C lcd(0x27,16,2);
 // sometimes 0x27 works when 0x3F doesn't
 // that's the I2C address of the backpack 
 void setup() {
 // put your setup code here, to run once:
 	lcd.begin (16,2); // for 16 x 2 LCD module
-	lcd.setBacklightPin(3,POSITIVE);
+	lcd.init();
 	lcd.setBacklight(HIGH);
 	pinMode(BUTTON_PIN, INPUT);
 	pinMode(SWITCH_PIN, INPUT);
-	lcd.setCursor(0,0);
+	lcd.setCursor(0,0); //sets pos to print to
+	//0,0 is the very top left. (Column[0-15], row[0-1])
 	lcd.print("Counter");
 	n = 0;
 	pastButton = 0;
@@ -45,6 +46,8 @@ void loop() {
 		lcd.setCursor(0,1);
 		lcd.print(n);
 		lcd.print("            ");
+		//these spaces clear the rest of the tiles on the bottom row of the lcd
+		//Without them, when the number goes from 10 to 9, the 0 isn't cleared so it reads as 90
 	}
-	pastButton = bPwr;
+	pastButton = bPwr; //sets the previous state so that only the press increments and not the sustain
 }

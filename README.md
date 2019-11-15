@@ -31,7 +31,8 @@ Also the temporary home for GitHub help
 - [Code](#code-4)
 - [Wiring](#wiring-4)
 - [Problems](#problems-4)
-### [Motor_Control](#motor_control-1) -- COMING SOON!
+### [Motor_Control](#motor_control-1)
+### COMING SOON!
 - [Assignment](#assignment-5)
 - [Code](#code-5)
 - [Wiring](#wiring-5)
@@ -41,6 +42,10 @@ Also the temporary home for GitHub help
 ### LED_Blink_Revisited
 ##### Aug 23
 Back to [ToC](#table_of_contents)
+- [Assignment](#assignment)
+- [Code](#code)
+- [Wiring](#wiring)
+- [Problems](#problems)
 #### Assignment
 
 This assignment is deceptively easy -- just make an LED turn on and off. The problem comes with using a new text editor -- Sublime. It's toolchain is very fickle, and will just not work sometimes. Either way I got it done in a timely manner.

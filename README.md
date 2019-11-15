@@ -37,7 +37,7 @@ Also the temporary home for GitHub help
 - [Code](#code-5)
 - [Wiring](#wiring-5)
 - [Problems](#problems-5)
-
+----------
 
 ### LED_Blink_Revisited
 ##### Aug 23
@@ -83,13 +83,17 @@ Trying to comment it after the fact was hard tho; if you get math, you should ha
 ### Hello_LCD
 ##### Aug 28
 Back to [ToC](#table_of_contents)
+- [Assignment](#assignment-1)
+- [Code](#code-1)
+- [Wiring](#wiring-1)
+- [Problems](#problems-1)
 #### Assignment
 This assignment was all about getting an LCD hooked up and printing things to the screen. Thankfully, soldering pins is no longer required, since it's all done for us already
->  Here is the assignment.  On line 1 of the LCD, print "Hello World."  On line 2 of the LCD, print the number of seconds that have transpired since the program began. \
+>  Here is the assignment.  On line 1 of the LCD, print "Hello World."  On line 2 of the LCD, print the number of seconds that have transpired since the program began. 
 
 Since we have a nice teacher, he told us:
 
-> [We're] going to need the following lines somewhere: \
+> [We're] going to need the following lines somewhere: 
 ```arduino
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12); // Those are the pins for RS, EN, DB4, DB5, DB6, DB7, respectively
@@ -97,8 +101,6 @@ lcd.begin(16, 2);
 lcd.setCursor(0,0);
 lcd.print("stuff");
 ```
-
-
 #### Code
 #### Wiring
 #### Problems
@@ -106,6 +108,10 @@ lcd.print("stuff");
 ### LCD_Backpack
 #### Sep 4
 Back to [ToC](#table_of_contents)
+- [Assignment](#assignment-2)
+- [Code](#code-2)
+- [Wiring](#wiring-2)
+- [Problems](#problems-2)
 #### Assignment
 #### Code
 #### Wiring
@@ -138,6 +144,10 @@ I had a bunch of problems trying to get the photointerruptor to work, so I kept 
 ### Potentiometers
 #### Sep 18
 Back to [ToC](#table_of_contents)
+- [Assignment](#assignment-3)
+- [Code](#code-3)
+- [Wiring](#wiring-3)
+- [Problems](#problems-3)
 #### Assignment
 #### Code
 #### Wiring
@@ -146,6 +156,10 @@ None really, besides that weird LCD thing. The max value of the potentiometer is
 ### Motor_Control
 #### Sep 25
 Back to [ToC](#table_of_contents)
+- [Assignment](#assignment-5)
+- [Code](#code-5)
+- [Wiring](#wiring-5)
+- [Problems](#problems-5)
 Coming Soon!!
 #### Assignment
 #### Code

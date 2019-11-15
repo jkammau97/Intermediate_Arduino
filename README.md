@@ -31,7 +31,7 @@ Also the temporary home for GitHub help
 - [Code](#code-4)
 - [Wiring](#wiring-4)
 - [Problems](#problems-4)
-### [Motor_Control](#motor_control-1)
+### [Motor_Control](#motor_control-1) -- COMING SOON!
 - [Assignment](#assignment-5)
 - [Code](#code-5)
 - [Wiring](#wiring-5)
@@ -105,7 +105,23 @@ Back to [ToC](#table_of_contents)
 #### Code
 #### Wiring
 #### Problems
-
+If I remember correctly, my main problem was that I couldn't choose a way to do it or I was trying to find the most efficient way to do it. Also, something was really glitchy with my code (where it was working, but then I came back to it after a bit and it stopped working). Also, I had this issue where the LCD would only print the first character of a string (e.g. ```lcd.print("TEST");``` would only print ```T```); the only way to print a word was to do it one character at a time. For example: \
+Both this:
+```arduino 
+lcd.print("T");
+lcd.print("E");
+lcd.print("S");
+lcd.print("T");
+```
+and this:
+```arduino 
+lcd.print("TEST");
+lcd.print("Epls work");
+lcd.print("Save me");
+lcd.print("THelp");
+```
+Would both print:```TEST```to the LCD. The way I fixed it was just to delete and reinstall the ```LiquidCrystal_I2C``` library.
+*Note: I got this problem when I had already moved on to Potentiometers, but it had to only do with the LCD, so I put it up here.*
 ### Photointerrupters
 #### Sep 13
 Back to [ToC](#table_of_contents)
@@ -113,7 +129,7 @@ Back to [ToC](#table_of_contents)
 #### Code
 #### Wiring
 #### Problems
-
+I had a bunch of problems trying to get the photointerruptor to work, so I kept trying to unplug and plug it back in, replacing it, etc. It turned out that the problem was actually with my code! Don't try and do any sort of equality in an interrupt; just make a function that doesn't return anything and does the equality in said function (Like my code does!). Also, apparently only two pins can do interrupts, and can only watch one action (you can't have pin 2 look for both ```RISING``` and ```FALLING```).
 ### Potentiometers
 #### Sep 18
 Back to [ToC](#table_of_contents)
@@ -121,7 +137,7 @@ Back to [ToC](#table_of_contents)
 #### Code
 #### Wiring
 #### Problems
-
+None really, besides that weird LCD thing. The max value of the potentiometer is 1024 (or whatever I had it as in my code).
 ### Motor_Control
 #### Sep 25
 Back to [ToC](#table_of_contents)

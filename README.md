@@ -108,9 +108,18 @@ lcd.setCursor(0,0);
 lcd.print("stuff");
 ```
 #### Code
+Link to code [here.](hello_lcd/hello_lcd.ino)
+
 #### Wiring
-<img src="hello_lcd/Hello_LCD.fzz" alt="Tutor_1" width="300" height="250">
+<img src="hello_lcd/hello_lcd.png" alt="hello_lcd.png" width="350" height="250">
+
+[*Link to Fritzing*](hello_lcd/hello_lcd.fzz)
+
+Alternatively, [here's](https://learn.adafruit.com/character-lcds/wiring-a-character-lcd) a link to the adafruit article in the assingment description. They're describing the same schematic.
+
 #### Problems
+
+None of much substance. That article can be very confusing about how to wire up everything properly; You don't need to know why you're doing what you're doing, just use the fritzing.
 
 ### LCD_Backpack
 #### Sep 4
@@ -120,8 +129,37 @@ Back to [ToC](#table_of_contents)
 - [Wiring](#wiring-2)
 - [Problems](#problems-2)
 #### Assignment
+>Now, since you're communicating over I2C, you'll need a new library.  In Sublime, select Arduino -> Install Library -> Display -> L -> LiquidCrystal I2C -> [the most recent one].  That should do it.  At the top of your code, you'll need:
+```arduino
+	#include <Wire.h>
+	#include <LiquidCrystal_I2C.h> 
+	LiquidCrystal_I2C lcd(0x27,16,2);  /* set the LCD address to 0x27
+	for a 16 chars and 2 line display. */ 
+	// If 0x27 doesn't work, try 0x3F.
+```
+> In setup(), you'll need:
+```arduino
+	lcd.init()
+	lcd.backlight();
+```
+> The rest should be the same, using lcd.print() and lcd.setCursor(). 
+
+> ...
+
+> Time to spice it up.  Add a button to your breadboard (see figure to the right for a button refresher).  The LCD screen should display a count of how many times the button has been pressed.  Maybe a message like "Button presses: 34"
+
+>Even spicier: add a breadboard SPDT switch (wiring is basically the same as the push button).  If the switch is in one position, pushing the button counts up.  If it's in the other position, pushing the button counts down.
+
+>Show me when you're done.
+
 #### Code
+Link to code [here.](lcd_backpack/lcd_backpack.ino)
+
 #### Wiring
+>Grab an LCD backpack and four female-female jumper wires.  Wire it up:GND to GND, VCC to 5V, SDA to A4, and SCL to A5.  Then stick its 16 pins into the LCD's 16 female pins.  That's it! 
+
+*Fritzing coming soon* 
+
 #### Problems
 If I remember correctly, my main problem was that I couldn't choose a way to do it or I was trying to find the most efficient way to do it. Also, something was really glitchy with my code (where it was working, but then I came back to it after a bit and it stopped working). Also, I had this issue where the LCD would only print the first character of a string (e.g. ```lcd.print("TEST");``` would only print ```T```); the only way to print a word was to do it one character at a time. For example: \
 Both this:
@@ -143,8 +181,31 @@ Would both print:```TEST```to the LCD. The way I fixed it was just to delete and
 ### Photointerrupters
 #### Sep 13
 Back to [ToC](#table_of_contents)
+
+- [Assignment](#assignment-3)
+- [Code](#code-3)
+- [Wiring](#wiring-3)
+- [Problems](#problems-3)
+
 #### Assignment
+> Wire up a circuit that will turn on an LED when something is in between the legs of photo interrupter. Once you have that circuit up and running, it's time to spice it up (sorry, this seems to be a theme).
+
+> Enter the attachInterrupt() function!
+
+> For a full description, go here: https://www.arduino.cc/en/Reference/AttachInterrupt (Links to an external site.), but here are the basics.  The attachInterrupt(pin, function, mode) function takes three arguments
+
+	> pin - which pin you want to listen to (0 listens to digital pin 2 and 1 listens to digital pin 3; not intuitive, I know)
+
+	> function - which function you want to fire off when the interrupt occurs
+
+	> mode - what kind of change you want to listen for (for example, RISING to trigger when the pin goes from low to high or FALLING for when the pin goes from high to low)
+
+>You can use attachInterrupt() anywhere, but let's specify two in the setup() function.  One will turn the LED on with RISING.  The other will turn the LED off with FALLING.  So your code won't use any digitalRead() fucntions, only interrupts.
+
+> One more thing: use Serial.println() to print out how many times the photo interrupter has been interrupted.
+
 #### Code
+Link to code [here.](photointerruptor/photointerruptor.ino)
 #### Wiring
 #### Problems
 I had a bunch of problems trying to get the photointerruptor to work, so I kept trying to unplug and plug it back in, replacing it, etc. It turned out that the problem was actually with my code! Don't try and do any sort of equality in an interrupt; just make a function that doesn't return anything and does the equality in said function (Like my code does!). Also, apparently only two pins can do interrupts, and can only watch one action (you can't have pin 2 look for both ```RISING``` and ```FALLING```).

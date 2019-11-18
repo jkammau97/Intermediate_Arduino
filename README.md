@@ -11,26 +11,31 @@ Also the temporary home for GitHub help
 - [Code](#code)
 - [Wiring](#wiring)
 - [Problems](#problems)
+
 ### [Hello_LCD](#hello_lcd)
 - [Assignment](#assignment-1)
 - [Code](#code-1)
 - [Wiring](#wiring-1)
 - [Problems](#problems-1)
+
 ### [LCD_Backpack](#lcd_backpack-1)
 - [Assignment](#assignment-2)
 - [Code](#code-2)
 - [Wiring](#wiring-2)
 - [Problems](#problems-2)
+
 ### [Photointerrupters](#photointerrupters-1)
 - [Assignment](#assignment-3)
 - [Code](#code-3)
 - [Wiring](#wiring-3)
 - [Problems](#problems-3)
+
 ### [Potentiometers](#potentiometers-1)
 - [Assignment](#assignment-4)
 - [Code](#code-4)
 - [Wiring](#wiring-4)
 - [Problems](#problems-4)
+
 ### [Motor_Control](#motor_control-1)
 ### COMING SOON!
 - [Assignment](#assignment-5)
@@ -79,14 +84,15 @@ None of great significance, besides the ~ port thing
 
 Trying to comment it after the fact was hard tho; if you get math, you should have a easy time. Good luck otherwise ;)
 
----
 ### Hello_LCD
 ##### Aug 28
-Back to [ToC](#table_of_contents)
+Back to [ToC](#table_of_contents) 
+
 - [Assignment](#assignment-1)
 - [Code](#code-1)
 - [Wiring](#wiring-1)
 - [Problems](#problems-1)
+
 #### Assignment
 This assignment was all about getting an LCD hooked up and printing things to the screen. Thankfully, soldering pins is no longer required, since it's all done for us already
 >  Here is the assignment.  On line 1 of the LCD, print "Hello World."  On line 2 of the LCD, print the number of seconds that have transpired since the program began. 
@@ -103,6 +109,7 @@ lcd.print("stuff");
 ```
 #### Code
 #### Wiring
+<img src="hello_lcd/Hello_LCD.fzz" alt="Tutor_1" width="300" height="250">
 #### Problems
 
 ### LCD_Backpack

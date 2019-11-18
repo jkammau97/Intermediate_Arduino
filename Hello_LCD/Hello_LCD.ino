@@ -17,5 +17,5 @@ void loop() {
   lcd.setCursor(0,1);
   lcd.print(timeSec);
   delay(1000); //delay in milliseconds; 1000 ms = 1 s
-  timeSec++; //increments it by 1
+  timeSec++; //increments it by 1 for each second that passes
 }

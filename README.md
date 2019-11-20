@@ -42,21 +42,25 @@ Also the temporary home for GitHub help
 - [Code](#code-5)
 - [Wiring](#wiring-5)
 - [Problems](#problems-5)
-----------
+
+=======================================================
 
 ### LED_Blink_Revisited
 ##### Aug 23
 Back to [ToC](#table_of_contents)
+
 - [Assignment](#assignment)
 - [Code](#code)
 - [Wiring](#wiring)
 - [Problems](#problems)
+
 #### Assignment
 
 This assignment is deceptively easy -- just make an LED turn on and off. The problem comes with using a new text editor -- Sublime. It's toolchain is very fickle, and will just not work sometimes. Either way I got it done in a timely manner.
 
 #### Code
-*Commented Code link [Here:](led_fade)* \
+*Commented Code link [Here:](led_fade) -- Look below for specific files*
+
 [Triangle Wave](led_fade/led_fade_triwave)
 
 [Sinusoidal Wave](led_fade/led_fade_signwave)
@@ -111,9 +115,9 @@ lcd.print("stuff");
 Link to code [here.](hello_lcd/hello_lcd.ino)
 
 #### Wiring
-<img src="hello_lcd/hello_lcd.png" alt="hello_lcd.png" width="350" height="250">
+[<img src="hello_lcd/hello_lcd.png" alt="hello_lcd.png" width="350" height="250">](hello_lcd/hello_lcd.fzz)
 
-[*Link to Fritzing*](hello_lcd/hello_lcd.fzz)
+*Click on image to go to the fritzing*
 
 Alternatively, [here's](https://learn.adafruit.com/character-lcds/wiring-a-character-lcd) a link to the adafruit article in the assingment description. They're describing the same schematic.
 
@@ -124,6 +128,7 @@ None of much substance. That article can be very confusing about how to wire up 
 ### LCD_Backpack
 #### Sep 4
 Back to [ToC](#table_of_contents)
+
 - [Assignment](#assignment-2)
 - [Code](#code-2)
 - [Wiring](#wiring-2)
@@ -158,7 +163,10 @@ Link to code [here.](lcd_backpack/lcd_backpack.ino)
 #### Wiring
 >Grab an LCD backpack and four female-female jumper wires.  Wire it up:GND to GND, VCC to 5V, SDA to A4, and SCL to A5.  Then stick its 16 pins into the LCD's 16 female pins.  That's it! 
 
-*Fritzing coming soon* 
+[<img src="lcd_backpack/lcd_backpack.png" alt="lcd_backpack.png" width="350" height="250">](lcd_backpack/lcd_backpack.fzz)
+
+*Click on image to go to the fritzing*
+
 
 #### Problems
 If I remember correctly, my main problem was that I couldn't choose a way to do it or I was trying to find the most efficient way to do it. Also, something was really glitchy with my code (where it was working, but then I came back to it after a bit and it stopped working). Also, I had this issue where the LCD would only print the first character of a string (e.g. ```lcd.print("TEST");``` would only print ```T```); the only way to print a word was to do it one character at a time. For example: \
@@ -206,30 +214,53 @@ Back to [ToC](#table_of_contents)
 
 #### Code
 Link to code [here.](photointerruptor/photointerruptor.ino)
+
 #### Wiring
+[<img src="photointerruptor/photointerruptor.png" alt="photointerruptor.png" width="350" height="250">](photointerruptor/photointerruptor.fzz)
+
+*Click on image to go to the fritzing*
+
 #### Problems
 I had a bunch of problems trying to get the photointerruptor to work, so I kept trying to unplug and plug it back in, replacing it, etc. It turned out that the problem was actually with my code! Don't try and do any sort of equality in an interrupt; just make a function that doesn't return anything and does the equality in said function (Like my code does!). Also, apparently only two pins can do interrupts, and can only watch one action (you can't have pin 2 look for both ```RISING``` and ```FALLING```).
+
 ### Potentiometers
 #### Sep 18
 Back to [ToC](#table_of_contents)
+
 - [Assignment](#assignment-3)
 - [Code](#code-3)
 - [Wiring](#wiring-3)
 - [Problems](#problems-3)
+
 #### Assignment
+
 #### Code
+Link to code [here.](potentiometer/potentiometer.ino)
 #### Wiring
+[<img src="potentiometer/potentiometer.png" alt="potentiometer.png" width="350" height="250">](potentiometer/potentiometer.fzz)
+
+*Click on image to go to the fritzing*
+
 #### Problems
 None really, besides that weird LCD thing. The max value of the potentiometer is 1024 (or whatever I had it as in my code).
 ### Motor_Control
 #### Sep 25
 Back to [ToC](#table_of_contents)
+
 - [Assignment](#assignment-5)
 - [Code](#code-5)
 - [Wiring](#wiring-5)
 - [Problems](#problems-5)
+
 Coming Soon!!
+
 #### Assignment
+
 #### Code
+Link to code [here.](motor_control/motor_control.ino)
 #### Wiring
+[<img src="motor_control/motor_control.png" alt="motor_control.png" width="350" height="250">](motor_control/motor_control.fzz)
+
+*Click on image to go to the fritzing*
+
 #### Problems

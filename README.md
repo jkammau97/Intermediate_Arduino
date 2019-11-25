@@ -216,7 +216,7 @@ Back to [ToC](#table_of_contents)
 Link to code [here.](photointerruptor/photointerruptor.ino)
 
 #### Wiring
-[<img src="photointerruptor/photointerruptor.png" alt="photointerruptor.png" width="350" height="250">](photointerruptor/photointerruptor.fzz)
+[<img src="photointerruptor/photointerruptor.png" alt="photointerruptor.png" width="600" height="250">](photointerruptor/photointerruptor.fzz)
 
 *Click on image to go to the fritzing*
 

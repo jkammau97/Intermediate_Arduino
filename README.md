@@ -233,16 +233,22 @@ Back to [ToC](#table_of_contents)
 - [Problems](#problems-3)
 
 #### Assignment
+> Your assignment is to wire up a potentiometer and have its value scaled and read out to the LCD screen (using the backpack).  At the same time, the potentiometer controls the brightness of an LED.  
 
 #### Code
+
 Link to code [here.](potentiometer/potentiometer.ino)
+
 #### Wiring
-[<img src="potentiometer/potentiometer.png" alt="potentiometer.png" width="350" height="250">](potentiometer/potentiometer.fzz)
+[<img src="potentiometer/potentiometer.png" alt="potentiometer.png" width="600" height="250">](potentiometer/potentiometer.fzz)
 
 *Click on image to go to the fritzing*
 
 #### Problems
 None really, besides that weird LCD thing. The max value of the potentiometer is 1024 (or whatever I had it as in my code).
+
+----
+
 ### Motor_Control
 #### Sep 25
 Back to [ToC](#table_of_contents)

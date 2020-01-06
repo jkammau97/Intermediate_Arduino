@@ -247,7 +247,7 @@ Link to code [here.](potentiometer/potentiometer.ino)
 #### Problems
 None really, besides that weird LCD thing. The max value of the potentiometer is 1024 (or whatever I had it as in my code).
 
-----
+
 
 ### Motor_Control
 #### Sep 25
@@ -258,9 +258,10 @@ Back to [ToC](#table_of_contents)
 - [Wiring](#wiring-5)
 - [Problems](#problems-5)
 
-Coming Soon!!
 
 #### Assignment
+
+Control the rate of a motor's spin
 
 #### Code
 Link to code [here.](motor_control/motor_control.ino)
@@ -269,4 +270,9 @@ Link to code [here.](motor_control/motor_control.ino)
 
 *Click on image to go to the fritzing*
 
+Adapted from Alden D.
+
 #### Problems
+
+None. follow the diagram and you'll be good.
+JK! Make sure your battery pack isn't busted or jank. Also get the wiring checked before you plug it up.

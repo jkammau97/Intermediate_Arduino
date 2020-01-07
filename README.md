@@ -37,7 +37,6 @@ Also the temporary home for GitHub help
 - [Problems](#problems-4)
 
 ### [Motor_Control](#motor_control-1)
-### COMING SOON!
 - [Assignment](#assignment-5)
 - [Code](#code-5)
 - [Wiring](#wiring-5)
@@ -274,7 +273,7 @@ Link to code [here.](motor_control/motor_control.ino)
 
 *Click on image to go to the fritzing*
 
-Adapted from [Alden D.](https://github.com/adent11)
+Adapted from [Alden D.](https://github.com/adent11/Intermediate-Arduino#motor-control)
 
 #### Problems
 
